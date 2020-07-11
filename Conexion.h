@@ -20,14 +20,6 @@ public:
 
 	Conexion();
 	virtual ~Conexion();
-	int conectar();
-	char* consultar();
-	int conecbd();
-	char* ins();
-	int elimina();
-	char* eli();
-	int conecmod();
-	char* mod();
 	int conMate();
 	char* conM();
 	int insMate();
