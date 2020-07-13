@@ -28,28 +28,24 @@ int MenuAMP::mMAMP(){
 							cout<<"3. Modifica la Asignacion"<<endl;
 							cout<<"4. Elimina la Asignacion"<< endl;
 							cin>>opc;
-
-							switch(opc){
 							Conexion *amp;
+							amp=new Conexion();
+							switch(opc){
 								case 1:
-									amp= new Conexion();
 									amp->conamp();
 									break;
 
 								case 2:
-									amp= new Conexion();
 									amp->insamp();
 									amp->conamp();
 									break;
 
 								case 3:
-									amp= new Conexion();
 									amp->modamp();
 									amp->conamp();
 									break;
 
 								case 4:
-									amp= new Conexion();
 									amp->eliamp();
 									amp->conamp();
 									break;
