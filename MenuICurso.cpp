@@ -28,28 +28,24 @@ int MenuICurso::mMIC(){
 						cout<<"3. Modifica Curso"<<endl;
 						cout<<"4. Elimina Curso"<< endl;
 						cin>>opc;
-
-						switch(opc){
 						Conexion *ic;
+						ic= new Conexion();
+						switch(opc){
 							case 1:
-								ic= new Conexion();
 								ic->conicurso();
 								break;
 
 							case 2:
-								ic= new Conexion();
 								ic->insicurso();
 								ic->conicurso();
 								break;
 
 							case 3:
-								ic= new Conexion();
 								ic->modicurso();
 								ic->conicurso();
 								break;
 
 							case 4:
-								ic= new Conexion();
 								ic->eliicurso();
 								ic->conicurso();
 								break;
