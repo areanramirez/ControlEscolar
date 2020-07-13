@@ -33,28 +33,24 @@ int MenuMateria::mMMA(){
 					cout<<"3. Modifica Materia"<<endl;
 					cout<<"4. Elimina Materia "<< endl;
 					cin>>opc;
-
-					switch(opc){
 					Conexion *prueba;
+					prueba= new Conexion();
+					switch(opc){
 						case 1:
-							prueba= new Conexion();
 							prueba->conMate();
 							break;
 
 						case 2:
-							prueba= new Conexion();
 							prueba->insMate();
 							prueba->conMate();
 							break;
 
 						case 3:
-							prueba = new Conexion();
 							prueba->modMate();
 							prueba->conMate();
 							break;
 
 						case 4:
-							prueba= new Conexion();
 							prueba->eliMate();
 							prueba->conMate();
 							break;
