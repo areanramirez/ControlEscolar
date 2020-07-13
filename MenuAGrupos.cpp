@@ -28,28 +28,24 @@ int MenuAGrupos::mMAG(){
 							cout<<"3. Modifica Grupos"<<endl;
 							cout<<"4. Elimina Grupos"<< endl;
 							cin>>opc;
-
+						Conexion *ag;
+						ag= new Conexion();
 							switch(opc){
-							Conexion *ag;
 								case 1:
-									ag= new Conexion();
 									ag->conagrupos();
 									break;
 
 								case 2:
-									ag= new Conexion();
 									ag->insagrupos();
 									ag->conagrupos();
 									break;
 
 								case 3:
-									ag= new Conexion();
 									ag->modagrupos();
 									ag->conagrupos();
 									break;
 
 								case 4:
-									ag= new Conexion();
 									ag->eliagrupos();
 									ag->conagrupos();
 									break;
