@@ -165,7 +165,7 @@ char* Conexion::modM(){
 		cout << "\nPara actualizar el registro de una materia debe ingresar su identificador:";
 		cout <<"\nClave de la materia:"<<endl;
 		cin >>claveMateria;
-		cout << "\nAhora para actualizar el registro se necesita saber que dato deseas actualizar de la materia " + claveMateria;
+		cout << "\nAhora para actualizar el registro se necesita saber que dato deseas actualizar de la materia "    + claveMateria;
 		cout << "\n\t1. Clave";
 		cout << "\n\t2. Nombre";
 		cout << "\n\t3. Grado";
@@ -366,7 +366,7 @@ int Conexion::modPro(){
 char* Conexion::modP(){
 			int opcActualizar;
 				string reg, nRegistro, matri;
-				cout << "\nPara actualizar el registro de una materia debe ingresar su identificador:";
+				cout << "\nPara actualizar el registro de una profesor debe ingresar su identificador:";
 				cout <<"\nMatricula:"<<endl;
 				cin >>matri;
 				cout << "\nAhora para actualizar el registro se necesita saber que dato deseas actualizar del profesor" + matri;
@@ -379,7 +379,7 @@ char* Conexion::modP(){
 				cout << "\n\t7. Mes";
 				cout << "\n\t8. Año";
 				cout << "\n\t9. Medio de Contacto";
-				cout << "\n\t10. Estuio";
+				cout << "\n\t10. Estudio";
 				cout << "\nTeclee la opcion que desea actualizar:"<<endl;
 				cin >>opcActualizar;
 				if (opcActualizar==1){
@@ -615,7 +615,7 @@ int Conexion::eliAlu(){
 	}
 
 char* Conexion::eliA(){
-					string reg, nRegistro, matri;
+					string reg,  matri;
 					cout << "\nPara eliminar el registro de un alumno  debe ingresar su identificador:";
 					cout <<"\nMatricula:"<<endl;
 					cin >>matri;
@@ -650,8 +650,8 @@ int Conexion::modAlu(){
 
 char* Conexion::modA(){
 			int opcActualizar;
-				string reg, nRegistro, matri;
-				cout << "\nPara modificar el registro de una materia debe ingresar su identificador:";
+				string reg, matri;
+				cout << "\nPara modificar el registro de un alumno debe ingresar su identificador:";
 				cout <<"\nMatricula:"<<endl;
 				cin >>matri;
 				cout << "\nAhora para modificar el registro se necesita saber que dato deseas actualizar del alumno " + matri;
