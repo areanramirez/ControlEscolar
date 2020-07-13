@@ -32,28 +32,24 @@ int MenuAlumno::mMAl(){
 					cout<<"3. Modifica  Alumno"<<endl;
 					cout<<"4. Elimina  Alumno"<< endl;
 					cin>>opc;
-
-					switch(opc){
 					Conexion *alum;
+					alum= new Conexion();
+					switch(opc){
 						case 1:
-							alum= new Conexion();
 							alum->conAlu();
 							break;
 
 						case 2:
-							alum= new Conexion();
 							alum->insAlu();
 							alum->conAlu();
 							break;
 
 						case 3:
-							alum = new Conexion();
 							alum->modAlu();
 							alum->conAlu();
 							break;
 
 						case 4:
-							alum= new Conexion();
 							alum->eliAlu();
 							alum->conAlu();
 							break;
