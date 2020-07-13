@@ -27,28 +27,24 @@ int MenuProfesor::mMP(){
 						cout<<"3. Modifica Profesor"<<endl;
 						cout<<"4. Elimina Profesor "<< endl;
 						cin>>opc;
-
-						switch(opc){
 						Conexion *profe;
+						profe= new Conexion();
+						switch(opc){
 							case 1:
-								profe= new Conexion();
 								profe->conPro();
 								break;
 
 							case 2:
-								profe= new Conexion();
 								profe->insPro();
 								profe->conPro();
 								break;
 
 							case 3:
-								profe = new Conexion();
 								profe->modPro();
 								profe->conPro();
 								break;
 
 							case 4:
-								profe= new Conexion();
 								profe->eliPro();
 								profe->conPro();
 								break;
